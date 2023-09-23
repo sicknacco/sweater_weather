@@ -65,5 +65,26 @@ RSpec.describe WeatherService do
         expect(day[:astro][:sunset]).to be_a(String)
       end
     end
+
+    it 'returns hourly weather data for next 24 hours', :vcr do
+      weather = WeatherService.hourly_weather(39.74001, -104.99202)
+
+      expect(weather).to be_a(Hash)
+
+      weather[:forecast][:forecastday].each do |hour|
+        expect(hour[:hour]).to be_a(Array)
+        expect(hour[:hour].count).to eq(24)
+        expect(hour[:hour][0]).to be_a(Hash)
+        expect(hour[:hour][0]).to have_key(:time)
+        expect(hour[:hour][0][:time]).to be_a(String)
+        expect(hour[:hour][0]).to have_key(:temp_f)
+        expect(hour[:hour][0][:temp_f]).to be_a(Float)
+        expect(hour[:hour][0]).to have_key(:condition)
+        expect(hour[:hour][0][:condition]).to be_a(Hash)
+        expect(hour[:hour][0][:condition]).to have_key(:text)
+        expect(hour[:hour][0][:condition][:text]).to be_a(String)
+        expect(hour[:hour][0][:condition]).to have_key(:icon)
+        expect(hour[:hour][0][:condition][:icon]).to be_a(String)
+    end
   end
 end
