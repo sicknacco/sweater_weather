@@ -33,4 +33,38 @@ RSpec.describe Forecast do
     expect(@weather.current_weather[:condition]).to be_a(String)
     expect(@weather.current_weather).to have_key(:icon)
   end
+
+  it 'has daily weather attributes', :vcr do
+    expect(@weather.daily_weather.count).to eq(5)
+    @weather.daily_weather.each do |day|
+      expect(day).to have_key(:date)
+      expect(day[:date]).to be_a(String)
+      expect(day).to have_key(:sunrise)
+      expect(day[:sunrise]).to be_a(String)
+      expect(day).to have_key(:sunset)
+      expect(day[:sunset]).to be_a(String)
+      expect(day).to have_key(:max_temp)
+      expect(day[:max_temp]).to be_a(Float)
+      expect(day).to have_key(:min_temp)
+      expect(day[:min_temp]).to be_a(Float)
+      expect(day).to have_key(:condition)
+      expect(day[:condition]).to be_a(String)
+      expect(day).to have_key(:icon)
+      expect(day[:icon]).to be_a(String)
+    end
+  end
+
+  it 'has hourly weather attributes', :vcr do
+    expect(@weather.hourly_weather.count).to eq(24)
+    @weather.hourly_weather.each do |hour|
+      expect(hour).to have_key(:time)
+      expect(hour[:time]).to be_a(String)
+      expect(hour).to have_key(:temperature)
+      expect(hour[:temperature]).to be_a(Float)
+      expect(hour).to have_key(:conditions)
+      expect(hour[:conditions]).to be_a(String)
+      expect(hour).to have_key(:icon)
+      expect(hour[:icon]).to be_a(String)
+    end
+  end
 end
