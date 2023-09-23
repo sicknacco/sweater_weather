@@ -41,6 +41,7 @@ RSpec.describe 'Forecast API' do
       expect(forecast[:data][:attributes][:current_weather]).to have_key(:icon)
       expect(forecast[:data][:attributes][:current_weather][:icon]).to be_a(String)
 
+      expect(forecast[:data][:attributes][:current_weather].count).to eq(8)  # 8 keys
 
       expect(forecast[:data][:attributes]).to have_key(:daily_weather)
       expect(forecast[:data][:attributes][:daily_weather].count).to eq(5)
@@ -62,6 +63,8 @@ RSpec.describe 'Forecast API' do
         expect(day[:condition]).to be_a(String)
         expect(day).to have_key(:icon)
         expect(day[:icon]).to be_a(String)
+
+        expect(day.count).to eq(7) # 7 keys
       end
 
       expect(forecast[:data][:attributes]).to have_key(:hourly_weather)
@@ -78,6 +81,8 @@ RSpec.describe 'Forecast API' do
         expect(hour[:condition]).to be_a(String)
         expect(hour).to have_key(:icon)
         expect(hour[:icon]).to be_a(String)
+
+        expect(hour.count).to eq(4) # 4 keys
       end
     end
   end
