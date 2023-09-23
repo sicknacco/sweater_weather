@@ -61,8 +61,8 @@ RSpec.describe Forecast do
       expect(hour[:time]).to be_a(String)
       expect(hour).to have_key(:temperature)
       expect(hour[:temperature]).to be_a(Float)
-      expect(hour).to have_key(:conditions)
-      expect(hour[:conditions]).to be_a(String)
+      expect(hour).to have_key(:condition)
+      expect(hour[:condition]).to be_a(String)
       expect(hour).to have_key(:icon)
       expect(hour[:icon]).to be_a(String)
     end
