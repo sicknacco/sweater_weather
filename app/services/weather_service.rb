@@ -4,6 +4,9 @@ class WeatherService
     get_url("/v1/current.json?q=#{lat},#{lon}")
   end
 
+  def self.daily_weather(lat, lon)
+    get_url("/v1/forecast.json?q=#{lat},#{lon}&days=5")
+  end
   private
 
   def self.get_url(url)
