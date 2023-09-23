@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Sep 2023 18:50:07 GMT
+      - Sat, 23 Sep 2023 19:02:22 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,17 +29,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14996'
+      - '14995'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14996'
+      - '14995'
       Ratelimit-Reset:
-      - '2192993'
+      - '2192258'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 03efe9a0-5a42-11ee-88fb-5d30dc24e6e2
+      - b9e18f60-5a43-11ee-923f-0bc2ac19d7a0
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -48,7 +48,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJTYW4gRGllZ28sIENBIn0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IlNhbiBEaWVnbyIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJTYW4gRGllZ28iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJDQSIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzIuNzE1NjgsImxuZyI6LTExNy4xNjE3MX0sImRpc3BsYXlMYXRMbmciOnsibGF0IjozMi43MTU2OCwibG5nIjotMTE3LjE2MTcxfSwibWFwVXJsIjoiIn1dfV19
-  recorded_at: Sat, 23 Sep 2023 18:50:07 GMT
+  recorded_at: Sat, 23 Sep 2023 19:02:22 GMT
 - request:
     method: get
     uri: http://api.weatherapi.com/v1/current.json?key=98d7b903f9224f9ab1504126232309&q=32.71568,-117.16171
@@ -68,7 +68,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Sep 2023 18:50:07 GMT
+      - Sat, 23 Sep 2023 19:02:22 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -78,7 +78,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-LA1-993
+      - BunnyCDN-LA1-1110
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -90,9 +90,9 @@ http_interactions:
       Cache-Control:
       - public, max-age=180
       Via:
-      - 1.1 varnish (Varnish/6.0)
+      - 1.1 haproxy-api-1 (Varnish/7.3)
       X-Varnish:
-      - '444858581'
+      - '295240097'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -100,23 +100,23 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - '09/23/2023 18:47:22'
+      - '09/23/2023 19:02:22'
       Cdn-Edgestorageid:
       - '852'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - bf5965ca8921c07fdd074fea95af8be2
+      - d272c6c60c80404406a1de49b113572d
       Cdn-Cache:
-      - HIT
+      - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"San Diego","region":"California","country":"United
-        States of America","lat":32.72,"lon":-117.16,"tz_id":"America/Los_Angeles","localtime_epoch":1695494793,"localtime":"2023-09-23
-        11:46"},"current":{"last_updated_epoch":1695493800,"last_updated":"2023-09-23
-        11:30","temp_c":22.8,"temp_f":73.0,"is_day":1,"condition":{"text":"Partly
-        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":290,"wind_dir":"WNW","pressure_mb":1018.0,"pressure_in":30.05,"precip_mm":0.0,"precip_in":0.0,"humidity":66,"cloud":25,"feelslike_c":25.0,"feelslike_f":77.0,"vis_km":14.0,"vis_miles":8.0,"uv":4.0,"gust_mph":8.0,"gust_kph":12.9}}'
-  recorded_at: Sat, 23 Sep 2023 18:50:07 GMT
+        States of America","lat":32.72,"lon":-117.16,"tz_id":"America/Los_Angeles","localtime_epoch":1695495694,"localtime":"2023-09-23
+        12:01"},"current":{"last_updated_epoch":1695495600,"last_updated":"2023-09-23
+        12:00","temp_c":22.8,"temp_f":73.0,"is_day":1,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":290,"wind_dir":"WNW","pressure_mb":1018.0,"pressure_in":30.05,"precip_mm":0.0,"precip_in":0.0,"humidity":66,"cloud":25,"feelslike_c":24.9,"feelslike_f":76.9,"vis_km":14.0,"vis_miles":8.0,"uv":6.0,"gust_mph":11.6,"gust_kph":18.6}}'
+  recorded_at: Sat, 23 Sep 2023 19:02:22 GMT
 - request:
     method: get
     uri: http://api.weatherapi.com/v1/forecast.json?days=5&key=98d7b903f9224f9ab1504126232309&q=32.71568,-117.16171
@@ -136,7 +136,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Sep 2023 18:50:07 GMT
+      - Sat, 23 Sep 2023 19:02:26 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -146,7 +146,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-LA1-993
+      - BunnyCDN-LA1-1110
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -160,7 +160,7 @@ http_interactions:
       Via:
       - 1.1 varnish (Varnish/6.0)
       X-Varnish:
-      - '427329920'
+      - '436633753'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -168,20 +168,20 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - '09/23/2023 18:47:22'
+      - '09/23/2023 19:02:26'
       Cdn-Edgestorageid:
       - '985'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 51ae93f0303a9e9115ac09d5e14d3d8d
+      - 4659bdadbd66a3ef213b4cbdf8d3f9d3
       Cdn-Cache:
-      - HIT
+      - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"San Diego","region":"California","country":"United
-        States of America","lat":32.72,"lon":-117.16,"tz_id":"America/Los_Angeles","localtime_epoch":1695494800,"localtime":"2023-09-23
-        11:46"},"current":{"last_updated_epoch":1695494700,"last_updated":"2023-09-23
+        States of America","lat":32.72,"lon":-117.16,"tz_id":"America/Los_Angeles","localtime_epoch":1695495697,"localtime":"2023-09-23
+        12:01"},"current":{"last_updated_epoch":1695494700,"last_updated":"2023-09-23
         11:45","temp_c":22.8,"temp_f":73.0,"is_day":1,"condition":{"text":"Partly
         cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":290,"wind_dir":"WNW","pressure_mb":1018.0,"pressure_in":30.05,"precip_mm":0.0,"precip_in":0.0,"humidity":66,"cloud":25,"feelslike_c":25.0,"feelslike_f":77.0,"vis_km":14.0,"vis_miles":8.0,"uv":4.0,"gust_mph":8.0,"gust_kph":12.9},"forecast":{"forecastday":[{"date":"2023-09-23","date_epoch":1695427200,"day":{"maxtemp_c":22.8,"maxtemp_f":73.0,"mintemp_c":17.9,"mintemp_f":64.2,"avgtemp_c":19.6,"avgtemp_f":67.3,"maxwind_mph":10.5,"maxwind_kph":16.9,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":85.0,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Partly
         cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"uv":5.0},"astro":{"sunrise":"06:37
@@ -340,7 +340,7 @@ http_interactions:
         21:00","temp_c":19.4,"temp_f":66.9,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":6.9,"wind_kph":11.2,"wind_degree":204,"wind_dir":"SSW","pressure_mb":1011.0,"pressure_in":29.87,"precip_mm":0.0,"precip_in":0.0,"humidity":80,"cloud":5,"feelslike_c":19.4,"feelslike_f":66.9,"windchill_c":19.4,"windchill_f":66.9,"heatindex_c":19.4,"heatindex_f":66.9,"dewpoint_c":15.9,"dewpoint_f":60.7,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":9.8,"gust_kph":15.7,"uv":1.0},{"time_epoch":1695877200,"time":"2023-09-27
         22:00","temp_c":19.0,"temp_f":66.2,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":5.8,"wind_kph":9.4,"wind_degree":202,"wind_dir":"SSW","pressure_mb":1012.0,"pressure_in":29.88,"precip_mm":0.0,"precip_in":0.0,"humidity":83,"cloud":13,"feelslike_c":19.0,"feelslike_f":66.2,"windchill_c":19.0,"windchill_f":66.2,"heatindex_c":19.0,"heatindex_f":66.2,"dewpoint_c":16.0,"dewpoint_f":60.9,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":8.2,"gust_kph":13.2,"uv":1.0},{"time_epoch":1695880800,"time":"2023-09-27
         23:00","temp_c":18.8,"temp_f":65.9,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":5.1,"wind_kph":8.3,"wind_degree":179,"wind_dir":"S","pressure_mb":1012.0,"pressure_in":29.87,"precip_mm":0.0,"precip_in":0.0,"humidity":84,"cloud":17,"feelslike_c":18.8,"feelslike_f":65.9,"windchill_c":18.8,"windchill_f":65.9,"heatindex_c":18.8,"heatindex_f":65.9,"dewpoint_c":16.0,"dewpoint_f":60.9,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":7.3,"gust_kph":11.7,"uv":1.0}]}]}}'
-  recorded_at: Sat, 23 Sep 2023 18:50:07 GMT
+  recorded_at: Sat, 23 Sep 2023 19:02:27 GMT
 - request:
     method: get
     uri: http://api.weatherapi.com/v1/forecast.json?days=1&hour=24&key=98d7b903f9224f9ab1504126232309&q=32.71568,-117.16171
@@ -360,7 +360,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Sep 2023 18:50:08 GMT
+      - Sat, 23 Sep 2023 19:02:27 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -370,7 +370,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-LA1-993
+      - BunnyCDN-LA1-1110
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -384,7 +384,7 @@ http_interactions:
       Via:
       - 1.1 varnish (Varnish/6.0)
       X-Varnish:
-      - '419233976'
+      - '432537836'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -392,26 +392,26 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - '09/23/2023 18:47:23'
+      - '09/23/2023 19:02:27'
       Cdn-Edgestorageid:
       - '852'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - e6d832e9fdc6be7651850f615931382d
+      - fc18c60888ec93cfc328e0bd822f713a
       Cdn-Cache:
-      - HIT
+      - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"San Diego","region":"California","country":"United
-        States of America","lat":32.72,"lon":-117.16,"tz_id":"America/Los_Angeles","localtime_epoch":1695494794,"localtime":"2023-09-23
-        11:46"},"current":{"last_updated_epoch":1695494700,"last_updated":"2023-09-23
-        11:45","temp_c":22.8,"temp_f":73.0,"is_day":1,"condition":{"text":"Partly
-        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":290,"wind_dir":"WNW","pressure_mb":1018.0,"pressure_in":30.05,"precip_mm":0.0,"precip_in":0.0,"humidity":66,"cloud":25,"feelslike_c":25.0,"feelslike_f":77.0,"vis_km":14.0,"vis_miles":8.0,"uv":4.0,"gust_mph":8.0,"gust_kph":12.9},"forecast":{"forecastday":[{"date":"2023-09-23","date_epoch":1695427200,"day":{"maxtemp_c":22.8,"maxtemp_f":73.0,"mintemp_c":17.9,"mintemp_f":64.2,"avgtemp_c":19.6,"avgtemp_f":67.3,"maxwind_mph":10.5,"maxwind_kph":16.9,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":85.0,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Partly
+        States of America","lat":32.72,"lon":-117.16,"tz_id":"America/Los_Angeles","localtime_epoch":1695495698,"localtime":"2023-09-23
+        12:01"},"current":{"last_updated_epoch":1695495600,"last_updated":"2023-09-23
+        12:00","temp_c":22.8,"temp_f":73.0,"is_day":1,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":290,"wind_dir":"WNW","pressure_mb":1018.0,"pressure_in":30.05,"precip_mm":0.0,"precip_in":0.0,"humidity":66,"cloud":25,"feelslike_c":24.9,"feelslike_f":76.9,"vis_km":14.0,"vis_miles":8.0,"uv":6.0,"gust_mph":11.6,"gust_kph":18.6},"forecast":{"forecastday":[{"date":"2023-09-23","date_epoch":1695427200,"day":{"maxtemp_c":22.8,"maxtemp_f":73.0,"mintemp_c":17.9,"mintemp_f":64.2,"avgtemp_c":19.6,"avgtemp_f":67.3,"maxwind_mph":10.5,"maxwind_kph":16.9,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":85.0,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Partly
         cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"uv":5.0},"astro":{"sunrise":"06:37
         AM","sunset":"06:44 PM","moonrise":"03:06 PM","moonset":"No moonset","moon_phase":"Waxing
         Gibbous","moon_illumination":"52","is_moon_up":1,"is_sun_up":1},"hour":[]}]}}'
-  recorded_at: Sat, 23 Sep 2023 18:50:07 GMT
+  recorded_at: Sat, 23 Sep 2023 19:02:27 GMT
 - request:
     method: get
     uri: http://api.weatherapi.com/v1/forecast.json?key=98d7b903f9224f9ab1504126232309&q=32.71568,-117.16171
@@ -431,7 +431,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Sep 2023 19:22:06 GMT
+      - Sat, 23 Sep 2023 19:23:11 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -441,7 +441,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-LA1-1001
+      - BunnyCDN-LA1-986
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -469,9 +469,9 @@ http_interactions:
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 8e1f47a56cca6a285be094a83589a435
+      - 94e2c2ec4867e3e1f5ef1ed7180cec47
       Cdn-Cache:
-      - MISS
+      - HIT
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"San Diego","region":"California","country":"United
@@ -516,5 +516,5 @@ http_interactions:
         21:00","temp_c":18.2,"temp_f":64.8,"is_day":0,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png","code":1009},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":317,"wind_dir":"NW","pressure_mb":1015.0,"pressure_in":29.98,"precip_mm":0.0,"precip_in":0.0,"humidity":86,"cloud":95,"feelslike_c":18.2,"feelslike_f":64.8,"windchill_c":18.2,"windchill_f":64.8,"heatindex_c":18.2,"heatindex_f":64.8,"dewpoint_c":15.8,"dewpoint_f":60.5,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":11.1,"gust_kph":17.9,"uv":1.0},{"time_epoch":1695531600,"time":"2023-09-23
         22:00","temp_c":18.0,"temp_f":64.4,"is_day":0,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png","code":1009},"wind_mph":7.8,"wind_kph":12.6,"wind_degree":320,"wind_dir":"NW","pressure_mb":1016.0,"pressure_in":29.99,"precip_mm":0.0,"precip_in":0.0,"humidity":87,"cloud":97,"feelslike_c":18.0,"feelslike_f":64.4,"windchill_c":18.0,"windchill_f":64.4,"heatindex_c":18.0,"heatindex_f":64.4,"dewpoint_c":15.9,"dewpoint_f":60.5,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":10.4,"gust_kph":16.8,"uv":1.0},{"time_epoch":1695535200,"time":"2023-09-23
         23:00","temp_c":17.8,"temp_f":64.0,"is_day":0,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png","code":1009},"wind_mph":6.9,"wind_kph":11.2,"wind_degree":319,"wind_dir":"NW","pressure_mb":1016.0,"pressure_in":29.99,"precip_mm":0.0,"precip_in":0.0,"humidity":88,"cloud":94,"feelslike_c":17.8,"feelslike_f":64.0,"windchill_c":17.8,"windchill_f":64.0,"heatindex_c":17.8,"heatindex_f":64.0,"dewpoint_c":15.8,"dewpoint_f":60.4,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":9.2,"gust_kph":14.9,"uv":1.0}]}]}}'
-  recorded_at: Sat, 23 Sep 2023 19:22:07 GMT
+  recorded_at: Sat, 23 Sep 2023 19:23:11 GMT
 recorded_with: VCR 6.2.0
