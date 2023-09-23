@@ -9,7 +9,7 @@ RSpec.describe 'User API' do
     }
     headers = { 'CONTENT_TYPE' => 'application/json' }
 
-    post '/api/v1/users', headers: headers, params: JSON.generate(params)
+    post '/api/v0/users', headers: headers, params: JSON.generate(params)
 
     expect(response).to be_successful
     expect(response.status).to eq(201)
@@ -32,3 +32,4 @@ RSpec.describe 'User API' do
     expect(user[:data][:attributes]).to have_key(:api_key)
     expect(user[:data][:attributes][:api_key]).to be_a(String)
   end
+end
