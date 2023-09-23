@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=map_key&location=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Sep 2023 19:51:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '344'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14990'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14990'
+      Ratelimit-Reset:
+      - '2189298'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 9e839f90-5a4a-11ee-88fb-5d30dc24e6e2
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"158-SDl5fNi22x9FSEkVOXJ4rQPLABU"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjQwMCwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjMgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiSWxsZWdhbCBhcmd1bWVudCBmcm9tIHJlcXVlc3Q6IEluc3VmZmljaWVudCBpbmZvIGZvciBsb2NhdGlvbiJdfSwib3B0aW9ucyI6eyJtYXhSZXN1bHRzIjotMSwiaWdub3JlTGF0TG5nSW5wdXQiOmZhbHNlfSwicmVzdWx0cyI6W3sicHJvdmlkZWRMb2NhdGlvbiI6e30sImxvY2F0aW9ucyI6W119XX0=
+  recorded_at: Sat, 23 Sep 2023 19:51:42 GMT
+recorded_with: VCR 6.2.0

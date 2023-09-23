@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=98d7b903f9224f9ab1504126232309&q=39.74001,-104.99202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Sep 2023 03:01:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-LA1-1114
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Cache-Control:
+      - public, max-age=180
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/23/2023 03:01:32'
+      Cdn-Edgestorageid:
+      - '992'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 1b92d8df7a59d70aaa5d50068e83dc92
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Denver","region":"Colorado","country":"United
+        States of America","lat":39.74,"lon":-104.99,"tz_id":"America/Denver","localtime_epoch":1695438044,"localtime":"2023-09-22
+        21:00"},"current":{"last_updated_epoch":1695437100,"last_updated":"2023-09-22
+        20:45","temp_c":17.7,"temp_f":63.9,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":12.5,"wind_kph":20.2,"wind_degree":50,"wind_dir":"NE","pressure_mb":1013.0,"pressure_in":29.9,"precip_mm":0.0,"precip_in":0.0,"humidity":53,"cloud":0,"feelslike_c":17.7,"feelslike_f":63.9,"vis_km":16.0,"vis_miles":9.0,"uv":1.0,"gust_mph":9.4,"gust_kph":15.2}}'
+  recorded_at: Sat, 23 Sep 2023 03:01:32 GMT
+recorded_with: VCR 6.2.0
