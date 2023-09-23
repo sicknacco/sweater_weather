@@ -38,6 +38,8 @@ RSpec.describe WeatherService do
       expect(weather[:forecast]).to have_key(:forecastday)
       expect(weather[:forecast][:forecastday]).to be_a(Array)
 
+      expect(weather[:forecast][:forecastday].count).to eq(5)
+
       weather[:forecast][:forecastday].each do |day|
         expect(day).to be_a(Hash)
         expect(day).to have_key(:date)
