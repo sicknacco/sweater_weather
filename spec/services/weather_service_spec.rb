@@ -70,7 +70,6 @@ RSpec.describe WeatherService do
       weather = WeatherService.hourly_weather(39.74001, -104.99202)
 
       expect(weather).to be_a(Hash)
-
       weather[:forecast][:forecastday].each do |hour|
         expect(hour[:hour]).to be_a(Array)
         expect(hour[:hour].count).to eq(24)
@@ -85,6 +84,7 @@ RSpec.describe WeatherService do
         expect(hour[:hour][0][:condition][:text]).to be_a(String)
         expect(hour[:hour][0][:condition]).to have_key(:icon)
         expect(hour[:hour][0][:condition][:icon]).to be_a(String)
+      end
     end
   end
 end
