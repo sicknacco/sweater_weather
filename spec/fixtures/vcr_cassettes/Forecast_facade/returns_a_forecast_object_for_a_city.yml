@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=map_key&location=San%20Diego,%20CA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Sep 2023 18:07:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '807'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14998'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14998'
+      Ratelimit-Reset:
+      - '2195559'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 0ab389a0-5a3c-11ee-a6bf-19b3c358d110
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"327-Yps4cR54MniMcM62T6HBWIrL0VM"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJTYW4gRGllZ28sIENBIn0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IlNhbiBEaWVnbyIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJTYW4gRGllZ28iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJDQSIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzIuNzE1NjgsImxuZyI6LTExNy4xNjE3MX0sImRpc3BsYXlMYXRMbmciOnsibGF0IjozMi43MTU2OCwibG5nIjotMTE3LjE2MTcxfSwibWFwVXJsIjoiIn1dfV19
+  recorded_at: Sat, 23 Sep 2023 18:07:22 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=98d7b903f9224f9ab1504126232309&q=32.71568,-117.16171
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Sep 2023 18:13:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-LA1-987
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '400196664'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/23/2023 18:13:31'
+      Cdn-Edgestorageid:
+      - '852'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - f21d4ae213d5ba3f92b02a1420387e65
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"San Diego","region":"California","country":"United
+        States of America","lat":32.72,"lon":-117.16,"tz_id":"America/Los_Angeles","localtime_epoch":1695492762,"localtime":"2023-09-23
+        11:12"},"current":{"last_updated_epoch":1695492000,"last_updated":"2023-09-23
+        11:00","temp_c":22.8,"temp_f":73.0,"is_day":1,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":2.2,"wind_kph":3.6,"wind_degree":298,"wind_dir":"WNW","pressure_mb":1018.0,"pressure_in":30.05,"precip_mm":0.0,"precip_in":0.0,"humidity":66,"cloud":50,"feelslike_c":25.0,"feelslike_f":77.0,"vis_km":14.0,"vis_miles":8.0,"uv":4.0,"gust_mph":8.0,"gust_kph":12.9}}'
+  recorded_at: Sat, 23 Sep 2023 18:13:31 GMT
+recorded_with: VCR 6.2.0
