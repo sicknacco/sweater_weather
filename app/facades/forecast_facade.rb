@@ -16,7 +16,29 @@ class ForecastFacade
       icon: current.dig(:current, :condition, :icon)
     }
     
+    daily = WeatherService.daily_weather(lat, lon)
+    dw = daily[:forecast][:forecastday].map do |day|
+      {
+        date: day[:date],
+        sunrise: day.dig(:astro, :sunrise),
+        sunset: day.dig(:astro, :sunset),
+        max_temp: day.dig(:day, :maxtemp_f),
+        min_temp: day.dig(:day, :mintemp_f),
+        condition: day.dig(:day, :condition, :text),
+        icon: day.dig(:day, :condition, :icon)
+      }
+    end
+   
     hourly = WeatherService.hourly_weather(lat, lon)
-    hw =
+    hw = hourly[:forecast][:forecastday][0][:hour].map do |hour|
+      {
+        time: hour[:time],
+        temperature: hour[:temp_f],
+        condition: hour.dig(:condition, :text),
+        icon: hour.dig(:condition, :icon)
+      }
+    end
+
+    Forecast.new(cw, dw, hw)
   end
 end
