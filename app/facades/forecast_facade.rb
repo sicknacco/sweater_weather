@@ -32,13 +32,13 @@ class ForecastFacade
     hourly = WeatherService.hourly_weather(lat, lon)
     hw = hourly[:forecast][:forecastday][0][:hour].map do |hour|
       {
-        time: hour[:time],
+        time: hour[:time].split[1],
         temperature: hour[:temp_f],
-        condition: hour.dig(:condition, :text),
-        icon: hour.dig(:condition, :icon)
+        conditions: hour[:condition][:text],
+        icon: hour[:condition][:icon]
       }
     end
-
+    
     Forecast.new(cw, dw, hw)
   end
 end
