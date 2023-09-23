@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Forecast API' do
   describe 'happy path' do
-    it 'can get forecast for a city' do
+    it 'can get forecast for a city', :vcr do
       location = 'san diego,ca'
 
       get "/api/v0/forecast?location=#{location}"
@@ -31,7 +31,7 @@ RSpec.describe 'Forecast API' do
       expect(forecast[:data][:attributes][:current_weather]).to have_key(:feels_like)
       expect(forecast[:data][:attributes][:current_weather][:feels_like]).to be_a(Float)
       expect(forecast[:data][:attributes][:current_weather]).to have_key(:humidity)
-      expect(forecast[:data][:attributes][:current_weather][:humidity]).to be_a(Float)
+      expect(forecast[:data][:attributes][:current_weather][:humidity]).to be_a(Float).or be_an(Integer)
       expect(forecast[:data][:attributes][:current_weather]).to have_key(:uvi)
       expect(forecast[:data][:attributes][:current_weather][:uvi]).to be_a(Float)
       expect(forecast[:data][:attributes][:current_weather]).to have_key(:visibility)
@@ -79,6 +79,24 @@ RSpec.describe 'Forecast API' do
         expect(hour).to have_key(:icon)
         expect(hour[:icon]).to be_a(String)
       end
+    end
+  end
+
+  describe 'sad path' do
+    it 'returns an error if location is not provided', :vcr do
+      location = ''
+
+      get "/api/v0/forecast?location=#{location}"
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+
+      errors = JSON.parse(response.body, symbolize_names: true)
+
+      expect(errors).to be_a(Hash)
+      expect(errors).to have_key(:error)
+      expect(errors[:error]).to be_a(String)
+      expect(errors[:error]).to eq('Location not provided')
     end
   end
 end

@@ -34,7 +34,7 @@ class ForecastFacade
       {
         time: hour[:time].split[1],
         temperature: hour[:temp_f],
-        conditions: hour[:condition][:text],
+        condition: hour[:condition][:text],
         icon: hour[:condition][:icon]
       }
     end
