@@ -40,4 +40,15 @@ RSpec.describe MapService do
       expect(directions[:route][:locations][1][:latLng][:lng]).to be_a(Float)
     end
   end
+
+  describe 'error for no route' do
+    it 'returns error message', :vcr do
+      impossible = MapService.get_directions('new york,co', 'honolulu,hi')
+      
+      expect(impossible).to be_a(Hash)
+      expect(impossible).to have_key(:route)
+      expect(impossible[:route]).to be_a(Hash)
+      expect(impossible[:route]).to have_key(:routeError)
+    end
+  end
 end
