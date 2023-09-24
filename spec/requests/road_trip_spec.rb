@@ -52,4 +52,54 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
       expect(trip[:data][:attributes][:weather_at_eta][:condition]).to be_a(String)
     end
   end
+
+  describe "sad path" do
+    it 'returns an error if the api key is invalid', :vcr do
+      payload = {
+        origin: 'new york, ny',
+        destination: 'los angeles, ca',
+        api_key: '124153'
+      }
+      headers = {
+        "CONTENT_TYPE" => "application/json",
+        "ACCEPT" => "application/json"
+      }
+      
+      post '/api/v0/road_trip', headers: headers, params: JSON.generate(payload)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+      
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a(Hash)
+      expect(error).to have_key(:error)
+      expect(error[:error]).to be_a(String)
+      expect(error[:error]).to eq('Invalid API key')
+    end
+
+    it 'returns an error if no api key is provided' do
+      payload = {
+        origin: 'new york, ny',
+        destination: 'los angeles, ca',
+        api_key: nil
+      }
+      headers = {
+        "CONTENT_TYPE" => "application/json",
+        "ACCEPT" => "application/json"
+      }
+      
+      post '/api/v0/road_trip', headers: headers, params: JSON.generate(payload)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+      
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a(Hash)
+      expect(error).to have_key(:error)
+      expect(error[:error]).to be_a(String)
+      expect(error[:error]).to eq('Invalid API key')
+    end
+  end
 end
