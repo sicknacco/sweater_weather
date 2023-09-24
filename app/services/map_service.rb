@@ -1,5 +1,9 @@
 class MapService
 
+  def self.get_directions(origin, destination)
+    get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
+  end
+
   def self.city_coordinates(location)
     get_url("/geocoding/v1/address?location=#{location}")
   end
