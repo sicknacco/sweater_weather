@@ -6,7 +6,7 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
   end
 
   describe "happy path" do
-    it 'can get road trip info' do
+    it 'can get road trip info', :vcr do
       payload = {
         origin: 'new york, ny',
         destination: 'los angeles, ca',
@@ -19,10 +19,10 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
       
       post '/api/v0/road_trip', headers: headers, params: JSON.generate(payload)
 
-      trip = JSON.parse(response.body, symbolize_names: true)
-
       expect(response).to be_successful
       expect(response.status).to eq(201)
+      
+      trip = JSON.parse(response.body, symbolize_names: true)
 
       expect(trip).to be_a(Hash)
       expect(trip).to have_key(:data)
