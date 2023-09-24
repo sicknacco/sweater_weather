@@ -17,7 +17,7 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
         "ACCEPT" => "application/json"
       }
       
-      post '/api/v0/road_trip', headers: headers, params: JSON.generate(params)
+      post '/api/v0/road_trip', headers: headers, params: JSON.generate(payload)
 
       trip = JSON.parse(response.body, symbolize_names: true)
 
