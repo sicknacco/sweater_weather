@@ -50,6 +50,9 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
       expect(trip[:data][:attributes][:weather_at_eta][:temperature]).to be_a(Float)
       expect(trip[:data][:attributes][:weather_at_eta]).to have_key(:condition)
       expect(trip[:data][:attributes][:weather_at_eta][:condition]).to be_a(String)
+
+      expect(trip[:data][:attributes].count).to eq(4)  # 4 keys
+      expect(trip[:data][:attributes][:weather_at_eta].count).to eq(3)  # 3 keys
     end
   end
 

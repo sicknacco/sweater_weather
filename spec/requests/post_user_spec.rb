@@ -35,6 +35,8 @@ RSpec.describe 'User API' do
       expect(user[:data][:attributes][:email]).to be_a(String)
       expect(user[:data][:attributes]).to have_key(:api_key)
       expect(user[:data][:attributes][:api_key]).to be_a(String)
+
+      expect(user[:data][:attributes].count).to eq(2)  # 2 keys
     end
   end
   
