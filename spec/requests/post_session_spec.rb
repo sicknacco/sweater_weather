@@ -15,7 +15,7 @@ RSpec.describe "POST /api/v0/sessions", type: :request do
         "CONTENT_TYPE" => "application/json",
         "ACCEPT" => "application/json"
       }
-      post "/api/v0/sessions", headers: headers, params: JSON.generate(payload)
+      post "/api/v0/sessions", headers: headers, params: payload, as: :json
       
       expect(response).to be_successful
       
@@ -57,7 +57,7 @@ RSpec.describe "POST /api/v0/sessions", type: :request do
         "CONTENT_TYPE" => "application/json",
         "ACCEPT" => "application/json"
       }
-      post "/api/v0/sessions", headers: headers, params: JSON.generate(payload)
+      post "/api/v0/sessions", headers: headers, params: payload, as: :json
 
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
