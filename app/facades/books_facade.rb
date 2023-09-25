@@ -19,7 +19,7 @@ class BooksFacade
         title: book[:title]
       }
     end
-    
+
     Books.new(forecast, books_data, total_books_found, location)
   end
 end
