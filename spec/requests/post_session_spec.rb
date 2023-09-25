@@ -42,6 +42,8 @@ RSpec.describe "POST /api/v0/sessions", type: :request do
       expect(session_data[:data][:attributes][:api_key]).to be_a(String)
       expect(session_data[:data][:attributes][:api_key]).to eq(@user.api_key)
       expect(session_data[:data][:attributes]).to_not have_key(:password)
+
+      expect(session_data[:data][:attributes].count).to eq(2)  # 2 keys
     end
   end
 

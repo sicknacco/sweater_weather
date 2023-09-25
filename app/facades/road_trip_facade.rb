@@ -4,12 +4,14 @@ class RoadTripFacade
     if directions[:route].has_key?(:routeError)
       RoadTrip.new(origin, destination, 'impossible route', {})
     else
-      travel_time = directions[:route][:formattedTime]
       dest_lat = directions[:route][:locations][1][:latLng][:lat]
       dest_lng = directions[:route][:locations][1][:latLng][:lng]
       
-      arrival_time = Time.now + travel_time.to_i
+      travel_time = directions[:route][:realTime]
+      arrival_time = Time.now + travel_time
       formatted_arv_time = arrival_time.strftime('%Y-%m-%d %H:%M')
+      formatted_trvl_time = directions[:route][:formattedTime]
+      
       forecast = WeatherService.daily_weather(dest_lat, dest_lng)
       
       forecast[:forecast][:forecastday].map do |day|
@@ -20,7 +22,7 @@ class RoadTripFacade
           condition: day[:hour][arrival_time.hour][:condition][:text]
         }
       end
-      RoadTrip.new(origin, destination, travel_time, @arrival_forecast)
+      RoadTrip.new(origin, destination, formatted_trvl_time, @arrival_forecast)
     end
   end
 end
