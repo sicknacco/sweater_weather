@@ -10795,4 +10795,874 @@ http_interactions:
             "offset": null
         }
   recorded_at: Mon, 25 Sep 2023 15:48:58 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=10&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 25 Sep 2023 16:00:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.065 TT 0 0.067"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 772,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL8503198W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10909613M",
+                        "/works/OL8503198W",
+                        "/authors/OL2843451A"
+                    ],
+                    "title": "Denver, Co",
+                    "title_suggest": "Denver, Co",
+                    "title_sort": "Denver, Co",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10909613M"
+                    ],
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "isbn": [
+                        "0762507845",
+                        "9780762507849"
+                    ],
+                    "last_modified_i": 1338943517,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2843451A"
+                    ],
+                    "author_name": [
+                        "Universal Map"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767942895778660352,
+                    "author_facet": [
+                        "OL2843451A Universal Map"
+                    ]
+                },
+                {
+                    "key": "/works/OL896607W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10945157M",
+                        "/works/OL896607W",
+                        "/authors/OL79165A"
+                    ],
+                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "title_suggest": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "title_sort": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "subtitle": "39105, digital raster graphic data",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945157M"
+                    ],
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "first_publish_year": 1996,
+                    "isbn": [
+                        "9780607620054",
+                        "0607620056"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "author_alternative_name": [
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "U.S. Geological Survey",
+                        "Geological Survey. (U.S.)",
+                        "Geological Survey (U .S.)",
+                        "Geological Survey (U.S.)",
+                        "United States. Geological Survey."
+                    ],
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1767943587095379970,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "key": "/works/OL896605W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10945156M",
+                        "/works/OL896605W",
+                        "/authors/OL79165A"
+                    ],
+                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "title_suggest": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "title_sort": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "subtitle": "39104, digital raster graphic data",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945156M"
+                    ],
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "first_publish_year": 1996,
+                    "isbn": [
+                        "0607620048",
+                        "9780607620047"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "author_alternative_name": [
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "U.S. Geological Survey",
+                        "Geological Survey. (U.S.)",
+                        "Geological Survey (U .S.)",
+                        "Geological Survey (U.S.)",
+                        "United States. Geological Survey."
+                    ],
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1767943587270492162,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "key": "/works/OL31554740W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL7772425M",
+                        "/works/OL31554740W"
+                    ],
+                    "title": "Denver Regional, CO",
+                    "title_suggest": "Denver Regional, CO",
+                    "title_sort": "Denver Regional, CO",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7772425M"
+                    ],
+                    "publish_date": [
+                        "June 1994"
+                    ],
+                    "publish_year": [
+                        1994
+                    ],
+                    "first_publish_year": 1994,
+                    "isbn": [
+                        "9780528952715",
+                        "0528952714"
+                    ],
+                    "last_modified_i": 1670927738,
+                    "ebook_count_i": 1,
+                    "ebook_access": "borrowable",
+                    "has_fulltext": true,
+                    "public_scan_b": false,
+                    "ia": [
+                        "denverregionalcl0000pier"
+                    ],
+                    "ia_collection": [
+                        "inlibrary",
+                        "internetarchivebooks",
+                        "printdisabled"
+                    ],
+                    "ia_collection_s": "inlibrary;internetarchivebooks;printdisabled",
+                    "lending_edition_s": "OL7772425M",
+                    "lending_identifier_s": "denverregionalcl0000pier",
+                    "printdisabled_s": "OL7772425M",
+                    "cover_edition_key": "OL7772425M",
+                    "cover_i": 13060547,
+                    "publisher": [
+                        "Rand McNally & Company"
+                    ],
+                    "id_librarything": [
+                        "9032702"
+                    ],
+                    "ia_box_id": [
+                        "IA40452109"
+                    ],
+                    "publisher_facet": [
+                        "Rand McNally & Company"
+                    ],
+                    "_version_": 1767927443616694273
+                },
+                {
+                    "key": "/works/OL4437736W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10911511M",
+                        "/works/OL4437736W",
+                        "/authors/OL882946A"
+                    ],
+                    "title": "Denver Co Deluxe Flip Map",
+                    "title_suggest": "Denver Co Deluxe Flip Map",
+                    "title_sort": "Denver Co Deluxe Flip Map",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10911511M"
+                    ],
+                    "publish_date": [
+                        "January 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "first_publish_year": 2003,
+                    "isbn": [
+                        "0762557362",
+                        "9780762557363"
+                    ],
+                    "last_modified_i": 1260838560,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL882946A"
+                    ],
+                    "author_name": [
+                        "Laura Ryder"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767935634853330944,
+                    "author_facet": [
+                        "OL882946A Laura Ryder"
+                    ]
+                },
+                {
+                    "key": "/works/OL8808821W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8537031M",
+                        "/works/OL8808821W",
+                        "/authors/OL3010394A"
+                    ],
+                    "title": "University of Denver Co 2007",
+                    "title_suggest": "University of Denver Co 2007",
+                    "title_sort": "University of Denver Co 2007",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8537031M"
+                    ],
+                    "publish_date": [
+                        "July 1, 2006"
+                    ],
+                    "publish_year": [
+                        2006
+                    ],
+                    "first_publish_year": 2006,
+                    "number_of_pages_median": 180,
+                    "oclc": [
+                        "150368610"
+                    ],
+                    "isbn": [
+                        "9781427401687",
+                        "1427401683"
+                    ],
+                    "last_modified_i": 1304171421,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL8537031M",
+                    "cover_i": 1847337,
+                    "publisher": [
+                        "College Prowler"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL3010394A"
+                    ],
+                    "author_name": [
+                        "College Prowler"
+                    ],
+                    "id_goodreads": [
+                        "2985742"
+                    ],
+                    "publisher_facet": [
+                        "College Prowler"
+                    ],
+                    "_version_": 1767943535849373696,
+                    "author_facet": [
+                        "OL3010394A College Prowler"
+                    ]
+                },
+                {
+                    "key": "/works/OL16800110W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL25422192M",
+                        "/works/OL16800110W",
+                        "/subjects/hfb",
+                        "/subjects/hfbco",
+                        "/subjects/hfbcolo",
+                        "/subjects/colorado_marriage_records",
+                        "/subjects/co_marriage_records",
+                        "/subjects/colo_marriage_records",
+                        "/subjects/colorado_genealogy",
+                        "/subjects/co_genealogy",
+                        "/subjects/colo_genealogy",
+                        "/subjects/colorado_marriages",
+                        "/subjects/co_marriages",
+                        "/subjects/colo_marriages",
+                        "/subjects/colorado_vital_records",
+                        "/subjects/co_vital_records",
+                        "/subjects/colo_vital_records",
+                        "/subjects/colorado_vitals",
+                        "/subjects/co_vitals",
+                        "/subjects/colo_vitals",
+                        "/subjects/co_archives",
+                        "/subjects/western_heritage",
+                        "/subjects/colorado_ancestry",
+                        "/subjects/co_ancestry",
+                        "/subjects/colorado_archives",
+                        "/subjects/marriage_records_of_colorado",
+                        "/subjects/marriage_records_of_co",
+                        "/subjects/colorado_grooms",
+                        "/subjects/colorado_brides",
+                        "/subjects/co_grooms",
+                        "/subjects/co_brides",
+                        "/subjects/genealogy",
+                        "/subjects/colorado_marriage_licenses",
+                        "/subjects/co_marriage_licenses",
+                        "/subjects/colorado_marriage_sources",
+                        "/subjects/co_marriage_sources",
+                        "/subjects/colorado_marriage_bonds",
+                        "/subjects/co_marriage_bonds",
+                        "/subjects/place:hfbcodenv",
+                        "/subjects/place:denver_county_colorado",
+                        "/subjects/place:denver_county",
+                        "/subjects/place:denver",
+                        "/subjects/place:denver_co",
+                        "/subjects/place:co",
+                        "/subjects/place:denver_county_co",
+                        "/subjects/place:denver_co_co_marr",
+                        "/subjects/place:denver_marriages",
+                        "/subjects/place:denver_county_colo",
+                        "/subjects/place:denver_co_colo",
+                        "/subjects/place:denver_county_marriage_records",
+                        "/subjects/place:denver_co_marriage_records",
+                        "/subjects/place:denver_co_marriages",
+                        "/subjects/place:denver_co_vital_records",
+                        "/subjects/place:denver_co_vitals",
+                        "/subjects/place:denver_county_(colo.)",
+                        "/subjects/time:1873-1939",
+                        "/subjects/time:1700s",
+                        "/subjects/time:1800s",
+                        "/subjects/time:19th_century",
+                        "/subjects/time:pre_1900",
+                        "/subjects/time:early",
+                        "/subjects/time:pre_modern",
+                        "/subjects/time:early_nineteenth_century_and_early_twentieth_century",
+                        "/authors/OL7168194A",
+                        "/authors/OL7168201A"
+                    ],
+                    "title": "Denver County Colorado Marriage Index 1873-1939",
+                    "title_suggest": "Denver County Colorado Marriage Index 1873-1939",
+                    "title_sort": "Denver County Colorado Marriage Index 1873-1939",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL25422192M"
+                    ],
+                    "publish_date": [
+                        "2013"
+                    ],
+                    "publish_year": [
+                        2013
+                    ],
+                    "first_publish_year": 2013,
+                    "number_of_pages_median": 27,
+                    "publish_place": [
+                        "3878 W 3200 S, Salt Lake City, UT 84120-2154 USA  ph.801-966-1611  huntingforbears@yahoo.com"
+                    ],
+                    "last_modified_i": 1513747688,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL25422192M",
+                    "cover_i": 7250387,
+                    "publisher": [
+                        "Hunting For Bears Genealogical Society and Library"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL7168194A",
+                        "OL7168201A"
+                    ],
+                    "author_name": [
+                        "Patrick Vernon Murray",
+                        "Dixie Owens Murray"
+                    ],
+                    "place": [
+                        "hfbcodenv",
+                        "Denver County Colorado",
+                        "Denver County",
+                        "Denver",
+                        "Denver Co",
+                        "CO",
+                        "Denver County CO",
+                        "Denver Co CO Marr",
+                        "Denver Marriages",
+                        "Denver County Colo",
+                        "Denver Co Colo",
+                        "Denver County Marriage Records",
+                        "Denver Co Marriage Records",
+                        "Denver CO Marriages",
+                        "Denver CO vital records",
+                        "Denver CO vitals",
+                        "Denver County (Colo.)"
+                    ],
+                    "subject": [
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo",
+                        "Colorado Marriage Records",
+                        "CO Marriage Records",
+                        "Colo Marriage Records",
+                        "Colorado Genealogy",
+                        "CO Genealogy",
+                        "Colo Genealogy",
+                        "Colorado Marriages",
+                        "CO Marriages",
+                        "Colo Marriages",
+                        "Colorado vital records",
+                        "CO vital records",
+                        "Colo vital records",
+                        "Colorado vitals",
+                        "CO vitals",
+                        "Colo vitals",
+                        "CO Archives",
+                        "Western Heritage",
+                        "Colorado Ancestry",
+                        "CO Ancestry",
+                        "Colorado Archives",
+                        "Marriage Records of Colorado",
+                        "Marriage Records of CO",
+                        "Colorado Grooms",
+                        "Colorado Brides",
+                        "CO Grooms",
+                        "CO Brides",
+                        "Genealogy",
+                        "Colorado Marriage licenses",
+                        "CO Marriage licenses",
+                        "Colorado Marriage Sources",
+                        "CO Marriage Sources",
+                        "Colorado Marriage bonds",
+                        "CO Marriage bonds"
+                    ],
+                    "time": [
+                        "1873-1939",
+                        "1700s",
+                        "1800s",
+                        "19th Century",
+                        "pre 1900",
+                        "Early",
+                        "pre modern",
+                        "Early Nineteenth Century and Early Twentieth Century"
+                    ],
+                    "publisher_facet": [
+                        "Hunting For Bears Genealogical Society and Library"
+                    ],
+                    "place_key": [
+                        "co",
+                        "denver",
+                        "denver_co",
+                        "denver_co_co_marr",
+                        "denver_co_colo",
+                        "denver_co_marriage_records",
+                        "denver_co_marriages",
+                        "denver_co_vital_records",
+                        "denver_co_vitals",
+                        "denver_county",
+                        "denver_county_(colo.)",
+                        "denver_county_co",
+                        "denver_county_colo",
+                        "denver_county_colorado",
+                        "denver_county_marriage_records",
+                        "denver_marriages",
+                        "hfbcodenv"
+                    ],
+                    "time_facet": [
+                        "1700s",
+                        "1800s",
+                        "1873-1939",
+                        "19th Century",
+                        "Early",
+                        "Early Nineteenth Century and Early Twentieth Century",
+                        "pre 1900",
+                        "pre modern"
+                    ],
+                    "subject_facet": [
+                        "CO Ancestry",
+                        "CO Archives",
+                        "CO Brides",
+                        "CO Genealogy",
+                        "CO Grooms",
+                        "CO Marriage Records",
+                        "CO Marriage Sources",
+                        "CO Marriage bonds",
+                        "CO Marriage licenses",
+                        "CO Marriages",
+                        "CO vital records",
+                        "CO vitals",
+                        "Colo Genealogy",
+                        "Colo Marriage Records",
+                        "Colo Marriages",
+                        "Colo vital records",
+                        "Colo vitals",
+                        "Colorado Ancestry",
+                        "Colorado Archives",
+                        "Colorado Brides",
+                        "Colorado Genealogy",
+                        "Colorado Grooms",
+                        "Colorado Marriage Records",
+                        "Colorado Marriage Sources",
+                        "Colorado Marriage bonds",
+                        "Colorado Marriage licenses",
+                        "Colorado Marriages",
+                        "Colorado vital records",
+                        "Colorado vitals",
+                        "Genealogy",
+                        "Marriage Records of CO",
+                        "Marriage Records of Colorado",
+                        "Western Heritage",
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo"
+                    ],
+                    "_version_": 1767901532767911936,
+                    "place_facet": [
+                        "CO",
+                        "Denver",
+                        "Denver CO Marriages",
+                        "Denver CO vital records",
+                        "Denver CO vitals",
+                        "Denver Co",
+                        "Denver Co CO Marr",
+                        "Denver Co Colo",
+                        "Denver Co Marriage Records",
+                        "Denver County",
+                        "Denver County (Colo.)",
+                        "Denver County CO",
+                        "Denver County Colo",
+                        "Denver County Colorado",
+                        "Denver County Marriage Records",
+                        "Denver Marriages",
+                        "hfbcodenv"
+                    ],
+                    "author_facet": [
+                        "OL7168194A Patrick Vernon Murray",
+                        "OL7168201A Dixie Owens Murray"
+                    ],
+                    "subject_key": [
+                        "co_ancestry",
+                        "co_archives",
+                        "co_brides",
+                        "co_genealogy",
+                        "co_grooms",
+                        "co_marriage_bonds",
+                        "co_marriage_licenses",
+                        "co_marriage_records",
+                        "co_marriage_sources",
+                        "co_marriages",
+                        "co_vital_records",
+                        "co_vitals",
+                        "colo_genealogy",
+                        "colo_marriage_records",
+                        "colo_marriages",
+                        "colo_vital_records",
+                        "colo_vitals",
+                        "colorado_ancestry",
+                        "colorado_archives",
+                        "colorado_brides",
+                        "colorado_genealogy",
+                        "colorado_grooms",
+                        "colorado_marriage_bonds",
+                        "colorado_marriage_licenses",
+                        "colorado_marriage_records",
+                        "colorado_marriage_sources",
+                        "colorado_marriages",
+                        "colorado_vital_records",
+                        "colorado_vitals",
+                        "genealogy",
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo",
+                        "marriage_records_of_co",
+                        "marriage_records_of_colorado",
+                        "western_heritage"
+                    ],
+                    "time_key": [
+                        "1700s",
+                        "1800s",
+                        "1873-1939",
+                        "19th_century",
+                        "early",
+                        "early_nineteenth_century_and_early_twentieth_century",
+                        "pre_1900",
+                        "pre_modern"
+                    ]
+                },
+                {
+                    "key": "/works/OL4437737W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10910520M",
+                        "/works/OL4437737W",
+                        "/authors/OL882946A"
+                    ],
+                    "title": "Denver DLX Flip Map Co267",
+                    "title_suggest": "Denver DLX Flip Map Co267",
+                    "title_sort": "Denver DLX Flip Map Co267",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10910520M"
+                    ],
+                    "publish_date": [
+                        "January 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "first_publish_year": 2003,
+                    "number_of_pages_median": 1,
+                    "oclc": [
+                        "67517781"
+                    ],
+                    "isbn": [
+                        "9780762531639",
+                        "0762531630"
+                    ],
+                    "last_modified_i": 1338943603,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL882946A"
+                    ],
+                    "author_name": [
+                        "Laura Ryder"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767935634562875392,
+                    "author_facet": [
+                        "OL882946A Laura Ryder"
+                    ]
+                },
+                {
+                    "key": "/works/OL10910782M",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10910782M",
+                        "/works/OL10910782M"
+                    ],
+                    "title": "Denver, Co Vicinity (City Wall Maps)",
+                    "title_suggest": "Denver, Co Vicinity (City Wall Maps)",
+                    "title_sort": "Denver, Co Vicinity (City Wall Maps)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10910782M"
+                    ],
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "isbn": [
+                        "0762538627",
+                        "9780762538621"
+                    ],
+                    "last_modified_i": 1686044194,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767945477546835968
+                },
+                {
+                    "key": "/works/OL8541064W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL9197762M",
+                        "/works/OL8541064W",
+                        "/authors/OL2859862A"
+                    ],
+                    "title": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "title_suggest": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "title_sort": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL9197762M"
+                    ],
+                    "publish_date": [
+                        "January 30, 2006"
+                    ],
+                    "publish_year": [
+                        2006
+                    ],
+                    "first_publish_year": 2006,
+                    "number_of_pages_median": 1,
+                    "oclc": [
+                        "64038908"
+                    ],
+                    "isbn": [
+                        "9789812582621",
+                        "9812582622"
+                    ],
+                    "last_modified_i": 1670155218,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL9197762M",
+                    "cover_i": 2302739,
+                    "publisher": [
+                        "American Map Corporation"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2859862A"
+                    ],
+                    "author_name": [
+                        "American Map Corp"
+                    ],
+                    "publisher_facet": [
+                        "American Map Corporation"
+                    ],
+                    "_version_": 1767943005266771969,
+                    "author_facet": [
+                        "OL2859862A American Map Corp"
+                    ]
+                }
+            ],
+            "num_found": 772,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Mon, 25 Sep 2023 16:00:38 GMT
 recorded_with: VCR 6.2.0

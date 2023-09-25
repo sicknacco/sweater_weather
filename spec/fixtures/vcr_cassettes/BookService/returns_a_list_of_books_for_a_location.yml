@@ -8199,4 +8199,361 @@ http_interactions:
             "offset": null
         }
   recorded_at: Sat, 23 Sep 2023 21:07:29 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=5&q=san%20diego,%20ca
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 25 Sep 2023 15:57:10 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.079 TT 0 0.082"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 378,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL26788882W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL36312596M",
+                        "/works/OL26788882W",
+                        "/subjects/travel",
+                        "/subjects/photography",
+                        "/authors/OL264260A",
+                        "/authors/OL2850161A"
+                    ],
+                    "title": "San Diego, CA",
+                    "title_suggest": "San Diego, CA",
+                    "title_sort": "San Diego, CA",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL36312596M"
+                    ],
+                    "publish_date": [
+                        "2015"
+                    ],
+                    "publish_year": [
+                        2015
+                    ],
+                    "first_publish_year": 2015,
+                    "isbn": [
+                        "1934907383",
+                        "9781934907382"
+                    ],
+                    "last_modified_i": 1640853574,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Twin Lights Publishers, Incorporated"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL264260A",
+                        "OL2850161A"
+                    ],
+                    "author_name": [
+                        "Steve Gould",
+                        "Sara Day"
+                    ],
+                    "subject": [
+                        "Travel",
+                        "Photography"
+                    ],
+                    "publisher_facet": [
+                        "Twin Lights Publishers, Incorporated"
+                    ],
+                    "subject_facet": [
+                        "Photography",
+                        "Travel"
+                    ],
+                    "_version_": 1767919648805748737,
+                    "author_facet": [
+                        "OL264260A Steve Gould",
+                        "OL2850161A Sara Day"
+                    ],
+                    "subject_key": [
+                        "photography",
+                        "travel"
+                    ]
+                },
+                {
+                    "key": "/works/OL8621130W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL11528656M",
+                        "/works/OL8621130W",
+                        "/authors/OL2899685A"
+                    ],
+                    "title": "San Diego, Ca Map",
+                    "title_suggest": "San Diego, Ca Map",
+                    "title_sort": "San Diego, Ca Map",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL11528656M"
+                    ],
+                    "publish_date": [
+                        "August 2002"
+                    ],
+                    "publish_year": [
+                        2002
+                    ],
+                    "first_publish_year": 2002,
+                    "oclc": [
+                        "49510729"
+                    ],
+                    "isbn": [
+                        "9780841693081",
+                        "0841693080"
+                    ],
+                    "last_modified_i": 1303876567,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL11528656M",
+                    "cover_i": 2662369,
+                    "publisher": [
+                        "Creative Sales Corp"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2899685A"
+                    ],
+                    "author_name": [
+                        "G.M. Johnson & Associates Ltd"
+                    ],
+                    "author_alternative_name": [
+                        "G M Johnson Associates",
+                        "G.M. Johnson & Associates Ltd.",
+                        "G M Johnson & Associates Ltd.",
+                        "G M Johnson"
+                    ],
+                    "id_goodreads": [
+                        "3178616"
+                    ],
+                    "publisher_facet": [
+                        "Creative Sales Corp"
+                    ],
+                    "_version_": 1767943029184790529,
+                    "author_facet": [
+                        "OL2899685A G.M. Johnson & Associates Ltd"
+                    ]
+                },
+                {
+                    "key": "/works/OL8621082W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL11528442M",
+                        "/works/OL8621082W",
+                        "/authors/OL2899678A"
+                    ],
+                    "title": "San Diego, Ca Map",
+                    "title_suggest": "San Diego, Ca Map",
+                    "title_sort": "San Diego, Ca Map",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL11528442M"
+                    ],
+                    "publish_date": [
+                        "April 15, 2005"
+                    ],
+                    "publish_year": [
+                        2005
+                    ],
+                    "first_publish_year": 2005,
+                    "oclc": [
+                        "149627108"
+                    ],
+                    "isbn": [
+                        "9780841626386",
+                        "0841626383"
+                    ],
+                    "last_modified_i": 1303516840,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Creative Sales Corporation"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2899678A"
+                    ],
+                    "author_name": [
+                        "Creative Sales Corp."
+                    ],
+                    "publisher_facet": [
+                        "Creative Sales Corporation"
+                    ],
+                    "_version_": 1767943029873704960,
+                    "author_facet": [
+                        "OL2899678A Creative Sales Corp."
+                    ]
+                },
+                {
+                    "key": "/works/OL31268973W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL9197823M",
+                        "/works/OL31268973W",
+                        "/authors/OL2754912A"
+                    ],
+                    "title": "San Diego CA Insight Fleximap",
+                    "title_suggest": "San Diego CA Insight Fleximap",
+                    "title_sort": "San Diego CA Insight Fleximap",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL9197823M"
+                    ],
+                    "publish_date": [
+                        "August 30, 2005"
+                    ],
+                    "publish_year": [
+                        2005
+                    ],
+                    "first_publish_year": 2005,
+                    "number_of_pages_median": 1,
+                    "oclc": [
+                        "170087999"
+                    ],
+                    "isbn": [
+                        "9789812583888",
+                        "9812583882"
+                    ],
+                    "last_modified_i": 1670180634,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL9197823M",
+                    "cover_i": 2302787,
+                    "publisher": [
+                        "American Map Corporation"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2754912A"
+                    ],
+                    "author_name": [
+                        "American Map Corporation"
+                    ],
+                    "publisher_facet": [
+                        "American Map Corporation"
+                    ],
+                    "_version_": 1767927110302695426,
+                    "author_facet": [
+                        "OL2754912A American Map Corporation"
+                    ]
+                },
+                {
+                    "key": "/works/OL8808810W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8537023M",
+                        "/works/OL8808810W",
+                        "/authors/OL3010394A"
+                    ],
+                    "title": "Uc San Diego CA 2007",
+                    "title_suggest": "Uc San Diego CA 2007",
+                    "title_sort": "Uc San Diego CA 2007",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8537023M"
+                    ],
+                    "publish_date": [
+                        "July 1, 2006"
+                    ],
+                    "publish_year": [
+                        2006
+                    ],
+                    "first_publish_year": 2006,
+                    "number_of_pages_median": 180,
+                    "oclc": [
+                        "150368597"
+                    ],
+                    "isbn": [
+                        "9781427401601",
+                        "1427401608"
+                    ],
+                    "last_modified_i": 1339989440,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL8537023M",
+                    "cover_i": 1847329,
+                    "publisher": [
+                        "College Prowler"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL3010394A"
+                    ],
+                    "author_name": [
+                        "College Prowler"
+                    ],
+                    "id_goodreads": [
+                        "4848830"
+                    ],
+                    "publisher_facet": [
+                        "College Prowler"
+                    ],
+                    "_version_": 1767943535854616577,
+                    "author_facet": [
+                        "OL3010394A College Prowler"
+                    ]
+                }
+            ],
+            "num_found": 378,
+            "q": "san diego, ca",
+            "offset": null
+        }
+  recorded_at: Mon, 25 Sep 2023 15:57:10 GMT
 recorded_with: VCR 6.2.0
