@@ -13,7 +13,7 @@ RSpec.describe 'User API' do
         "ACCEPT" => "application/json"
       }
       
-      post '/api/v0/users', headers: headers, params: JSON.generate(params)
+      post '/api/v0/users', headers: headers, params: params, as: :json
       
       expect(response).to be_successful
       expect(response.status).to eq(201)
@@ -57,7 +57,7 @@ RSpec.describe 'User API' do
         "ACCEPT" => "application/json"
       }
 
-      post "/api/v0/users", headers: headers, params: JSON.generate(payload)
+      post "/api/v0/users", headers: headers, params: payload, as: :json
 
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
@@ -80,7 +80,7 @@ RSpec.describe 'User API' do
         "ACCEPT" => "application/json"
       }
 
-      post "/api/v0/users", headers: headers, params: JSON.generate(payload)
+      post "/api/v0/users", headers: headers, params: payload, as: :json
 
       expect(response).to_not be_successful
 
@@ -103,7 +103,7 @@ RSpec.describe 'User API' do
         "CONTENT_TYPE" => "application/json",
         "ACCEPT" => "application/json"
       }
-      post "/api/v0/users", headers: headers, params: JSON.generate(payload)
+      post "/api/v0/users", headers: headers, params: payload, as: :json
 
       expect(response).to_not be_successful
 

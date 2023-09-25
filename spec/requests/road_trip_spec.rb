@@ -17,7 +17,7 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
         "ACCEPT" => "application/json"
       }
       
-      post '/api/v0/road_trip', headers: headers, params: JSON.generate(payload)
+      post '/api/v0/road_trip', headers: headers, params: payload, as: :json
 
       expect(response).to be_successful
       expect(response.status).to eq(201)
@@ -68,7 +68,7 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
         "ACCEPT" => "application/json"
       }
       
-      post '/api/v0/road_trip', headers: headers, params: JSON.generate(payload)
+      post '/api/v0/road_trip', headers: headers, params: payload, as: :json
 
       expect(response).to_not be_successful
       expect(response.status).to eq(401)
@@ -92,7 +92,7 @@ RSpec.describe "POST /api/v0/road_trip", type: :request do
         "ACCEPT" => "application/json"
       }
       
-      post '/api/v0/road_trip', headers: headers, params: JSON.generate(payload)
+      post '/api/v0/road_trip', headers: headers, params: payload, as: :json
 
       expect(response).to_not be_successful
       expect(response.status).to eq(401)
