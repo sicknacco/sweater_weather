@@ -1,0 +1,457 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=map_key&location=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Sep 2023 16:56:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '797'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14934'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14934'
+      Ratelimit-Reset:
+      - '2027010'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 798570d0-5bc4-11ee-a6bf-19b3c358d110
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31d-e6U4VUsIusqpoCnMOLAMG4TFeGE"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJkZW52ZXIsY28ifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJtYXBVcmwiOiIifV19XX0=
+  recorded_at: Mon, 25 Sep 2023 16:56:30 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=98d7b903f9224f9ab1504126232309&q=39.74001,-104.99202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Sep 2023 16:56:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-LA1-1110
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '781486746'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/25/2023 16:56:31'
+      Cdn-Edgestorageid:
+      - '992'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 4dbd9c4b45c5e009e290a08d0a27f8ef
+      Cdn-Cache:
+      - EXPIRED
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Denver","region":"Colorado","country":"United
+        States of America","lat":39.74,"lon":-104.99,"tz_id":"America/Denver","localtime_epoch":1695660991,"localtime":"2023-09-25
+        10:56"},"current":{"last_updated_epoch":1695660300,"last_updated":"2023-09-25
+        10:45","temp_c":20.0,"temp_f":68.0,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":2.2,"wind_kph":3.6,"wind_degree":10,"wind_dir":"N","pressure_mb":1027.0,"pressure_in":30.32,"precip_mm":0.0,"precip_in":0.0,"humidity":24,"cloud":0,"feelslike_c":20.0,"feelslike_f":68.0,"vis_km":16.0,"vis_miles":9.0,"uv":6.0,"gust_mph":0.3,"gust_kph":0.4}}'
+  recorded_at: Mon, 25 Sep 2023 16:56:30 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=5&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 25 Sep 2023 16:56:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.028 TT 0 0.030"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 772,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL8503198W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10909613M",
+                        "/works/OL8503198W",
+                        "/authors/OL2843451A"
+                    ],
+                    "title": "Denver, Co",
+                    "title_suggest": "Denver, Co",
+                    "title_sort": "Denver, Co",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10909613M"
+                    ],
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "isbn": [
+                        "0762507845",
+                        "9780762507849"
+                    ],
+                    "last_modified_i": 1338943517,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2843451A"
+                    ],
+                    "author_name": [
+                        "Universal Map"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767942895778660352,
+                    "author_facet": [
+                        "OL2843451A Universal Map"
+                    ]
+                },
+                {
+                    "key": "/works/OL896607W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10945157M",
+                        "/works/OL896607W",
+                        "/authors/OL79165A"
+                    ],
+                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "title_suggest": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "title_sort": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "subtitle": "39105, digital raster graphic data",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945157M"
+                    ],
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "first_publish_year": 1996,
+                    "isbn": [
+                        "9780607620054",
+                        "0607620056"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "author_alternative_name": [
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "U.S. Geological Survey",
+                        "Geological Survey. (U.S.)",
+                        "Geological Survey (U .S.)",
+                        "Geological Survey (U.S.)",
+                        "United States. Geological Survey."
+                    ],
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1767943587095379970,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "key": "/works/OL896605W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10945156M",
+                        "/works/OL896605W",
+                        "/authors/OL79165A"
+                    ],
+                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "title_suggest": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "title_sort": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "subtitle": "39104, digital raster graphic data",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945156M"
+                    ],
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "first_publish_year": 1996,
+                    "isbn": [
+                        "0607620048",
+                        "9780607620047"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "author_alternative_name": [
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "U.S. Geological Survey",
+                        "Geological Survey. (U.S.)",
+                        "Geological Survey (U .S.)",
+                        "Geological Survey (U.S.)",
+                        "United States. Geological Survey."
+                    ],
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1767943587270492162,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "key": "/works/OL31554740W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL7772425M",
+                        "/works/OL31554740W"
+                    ],
+                    "title": "Denver Regional, CO",
+                    "title_suggest": "Denver Regional, CO",
+                    "title_sort": "Denver Regional, CO",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7772425M"
+                    ],
+                    "publish_date": [
+                        "June 1994"
+                    ],
+                    "publish_year": [
+                        1994
+                    ],
+                    "first_publish_year": 1994,
+                    "isbn": [
+                        "9780528952715",
+                        "0528952714"
+                    ],
+                    "last_modified_i": 1670927738,
+                    "ebook_count_i": 1,
+                    "ebook_access": "borrowable",
+                    "has_fulltext": true,
+                    "public_scan_b": false,
+                    "ia": [
+                        "denverregionalcl0000pier"
+                    ],
+                    "ia_collection": [
+                        "inlibrary",
+                        "internetarchivebooks",
+                        "printdisabled"
+                    ],
+                    "ia_collection_s": "inlibrary;internetarchivebooks;printdisabled",
+                    "lending_edition_s": "OL7772425M",
+                    "lending_identifier_s": "denverregionalcl0000pier",
+                    "printdisabled_s": "OL7772425M",
+                    "cover_edition_key": "OL7772425M",
+                    "cover_i": 13060547,
+                    "publisher": [
+                        "Rand McNally & Company"
+                    ],
+                    "id_librarything": [
+                        "9032702"
+                    ],
+                    "ia_box_id": [
+                        "IA40452109"
+                    ],
+                    "publisher_facet": [
+                        "Rand McNally & Company"
+                    ],
+                    "_version_": 1767927443616694273
+                },
+                {
+                    "key": "/works/OL4437736W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10911511M",
+                        "/works/OL4437736W",
+                        "/authors/OL882946A"
+                    ],
+                    "title": "Denver Co Deluxe Flip Map",
+                    "title_suggest": "Denver Co Deluxe Flip Map",
+                    "title_sort": "Denver Co Deluxe Flip Map",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10911511M"
+                    ],
+                    "publish_date": [
+                        "January 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "first_publish_year": 2003,
+                    "isbn": [
+                        "0762557362",
+                        "9780762557363"
+                    ],
+                    "last_modified_i": 1260838560,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL882946A"
+                    ],
+                    "author_name": [
+                        "Laura Ryder"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767935634853330944,
+                    "author_facet": [
+                        "OL882946A Laura Ryder"
+                    ]
+                }
+            ],
+            "num_found": 772,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Mon, 25 Sep 2023 16:56:31 GMT
+recorded_with: VCR 6.2.0
