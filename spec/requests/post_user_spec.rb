@@ -37,7 +37,7 @@ RSpec.describe 'User API' do
       expect(user[:data][:attributes][:api_key]).to be_a(String)
     end
   end
-
+  
   describe 'sad path' do
     it 'cannot create a new user if email is already taken' do
       User.create!(
